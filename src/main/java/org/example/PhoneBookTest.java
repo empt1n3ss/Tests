@@ -44,10 +44,13 @@ public class PhoneBookTest {
     public void testPrintAllNames(){
         phoneBook.add("Name1", "111");
         phoneBook.add("Name2", "222");
+        phoneBook.add("Name6", "333");
+        phoneBook.add("Name5", "444");
+        phoneBook.add("Name3", "555");
+        phoneBook.add("Name0", "666");
+        phoneBook.add("Name9", "777");
 
-        phoneBook.printAllNames();
-
-        String expectedOutput = "Name1\nName2\n";
+        String expectedOutput = "Name0\nName1\nName2\nName3\nName5\nName6\nName9\n";
         assertEquals(expectedOutput, phoneBook.printAllNames());
     }
 }
