@@ -23,4 +23,8 @@ public class PhoneBook {
         System.out.println(numberToName.get(number));
         return numberToName.get(number);
     }
+
+    public String findByName(){
+        return null;
+    }
 }
