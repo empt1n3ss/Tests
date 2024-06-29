@@ -28,4 +28,7 @@ public class PhoneBook {
         System.out.println(nameToNumber.get(name));
         return nameToNumber.get(name);
     }
+    public String printAllNames() {
+        return null;
+    }
 }

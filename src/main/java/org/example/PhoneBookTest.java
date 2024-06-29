@@ -39,4 +39,15 @@ public class PhoneBookTest {
         assertEquals("111", phoneBook.findByName("Name1"));
         assertNull(phoneBook.findByName("54321"));
     }
+
+    @Test
+    public void testPrintAllNames(){
+        phoneBook.add("Name1", "111");
+        phoneBook.add("Name2", "222");
+
+        phoneBook.printAllNames();
+
+        String expectedOutput = "Name1\nName2\n";
+        assertEquals(expectedOutput, phoneBook.printAllNames());
+    }
 }
